@@ -10,7 +10,7 @@ const Post = props => {
                 <img
                     alt = "APOD"
                     src = {post.url}
-                    className = "APODMEdia"
+                    className = "APODMedia"
                 />
             </div>
             <Description description = {post}/>
