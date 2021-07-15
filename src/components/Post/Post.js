@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const PostBorder = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 `;
 
@@ -28,7 +28,7 @@ const Date = styled.p`
 const Post = props => {
     const { post } = props;
     return (
-        <div className = "postBorder">
+        <PostBorder>
             <APODName>
                 {post.title}
             </APODName>
@@ -40,7 +40,7 @@ const Post = props => {
             </div>
             <Date>{post.date}</Date>
             <Description description = {post}/>
-        </div>
+            </PostBorder>
     );
 }
 
